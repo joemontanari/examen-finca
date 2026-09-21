@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Reglas abiertas SOLO con fines académicos (Examen).
+// No usar en un proyecto real: cualquiera podría leer/escribir los archivos.
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /comprobantes/{archivo} {
+      allow read, write: if true;
+    }
+  }
+}

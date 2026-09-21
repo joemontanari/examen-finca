@@ -1,0 +1,11 @@
+rules_version = '2';
+
+// Reglas abiertas SOLO con fines académicos (Examen).
+// No usar en un proyecto real: cualquiera podría leer/escribir los datos.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /contactos/{docId} {
+      allow read, write: if true;
+    }
+  }
+}
