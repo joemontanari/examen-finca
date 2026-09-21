@@ -4,6 +4,9 @@ Proyecto para el examen de Programación de Componentes (Unidad II). Es una tien
 
 Usa React + Vite, Firebase (Firestore, Auth y Storage), react-simple-validator para las validaciones y Bootstrap para el formulario y la cuenta.
 
+- Repo: https://github.com/joemontanari/examen-finca
+- Deploy: https://examen-finca.netlify.app
+
 ## Para correrlo
 
 ```
